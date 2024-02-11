@@ -33,3 +33,5 @@ class FileStorage:
                     self.new(obj_instance)
         except FileNotFoundError:
             pass
+
+
