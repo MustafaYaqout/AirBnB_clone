@@ -24,7 +24,7 @@ class FileStorage:
 
     def reload(self):
         try:
-            with open(FileStorage.__file_path, 'r') as f:
+            with open(FileStorage.__file_path, 'r',encoding="utf-8") as f:
                 objdict = json.load(f)
                 for key, value in objdict.items():
                     class_name, obj_id = key.split('.')
