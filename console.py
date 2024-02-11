@@ -1,19 +1,17 @@
 #!/usr/bin/python3
 import cmd
-import json
+
 
 from models import storage
-from models.base_model import BaseModel
-from models.engine.file_storage import FileStorage
 
 class HBNBCommand(cmd.Cmd):
     """class for command interpreter"""
-    prompt ='(hbnb) '
-    classes = {BaseModel}
+    prompt ="(hbnb) "
+
     
 
     def do_quit(self, arg):
-        """EOF command to exit the program"""
+        """quit command to exit the program"""
         return True
     
     def do_EOF(self, arg):
