@@ -1,3 +1,4 @@
+import models
 import uuid
 from datetime import datetime
 
@@ -26,9 +27,9 @@ class BaseModel:
         r_dict["updated_at"] = self.updated_at.isoformat()
         r_dict["__class__"] = self.__class__.__name__
         return r_dict
+
     
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
         clsname = self.__class__.__name__
-        return "[{}] ({}) {}".format(clsname, self.id, self.__dic)
-        
+        return "[{}] ({}) {}".format(clsname, self.id, self.__dict__)
