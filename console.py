@@ -4,20 +4,20 @@
 import cmd
 
 class HBNBCommand(cmd.Cmd):
-    """Command interpreter class"""
+    """Command interpreter"""
 
     prompt = "(hbnb) "
 
     def do_quit(self, arg):
-        """Quit command to exit the program"""
+        """Quit command to exit"""
         return True
 
     def do_EOF(self, arg):
-        """Exit the program using EOF"""
+        """Exit the program"""
         return True
 
     def emptyline(self):
-        """Do nothing on empty input line"""
+        """Do nothint line"""
         pass
 
 if __name__ == '__main__':
