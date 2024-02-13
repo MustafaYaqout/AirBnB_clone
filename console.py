@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Console module"""
-
 import cmd
 
 from models import storage
